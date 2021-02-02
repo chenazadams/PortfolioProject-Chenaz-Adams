@@ -6,6 +6,8 @@ Secondary Color (red):#ef233c;
 
 
 body{
+  background-color:#ffffff;
+  font-family: 'Nunito Sans', sans-serif;
   font-size: 16px;
   font-weight:300;
   line-height:1.6;
