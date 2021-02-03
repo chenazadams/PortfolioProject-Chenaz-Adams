@@ -38,3 +38,47 @@ h1,h2,h3,h4{
 img {
   width: 100%;
 }
+  color: #34e6c5;
+  text-decoration: underline;
+}
+  background-color: #ffffff;
+  font-weight: 400;
+  padding: 10px;
+  border-bottom: 1px solid #34e6c5; /* border width, type, color */
+  border-left: 1px solid #34e6c5;
+}
+  background-color: #34e6c5; /*bright green*/
+  color: black; /*button text color*/
+  opacity: 0.8; /* opacity of the button to 90% */
+  text-decoration: none;
+}
+.button:active { /* selected link */
+  color: #34e6c5;
+}
+/*send me an email button styling*/
+.button.contact {
+  background-color:#34e6c5 ;
+  color: black;
+  font-variant: small-caps;
+  font-weight: regular;
+  text-align:centre;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 10px;
+  padding-right: 10px;
+  border: 1px solid transparent;
+  box-shadow: 0 2px;
+  opacity: 0.8;
+  text-decoration: none;
+}
+.button.contact:hover {
+  background-color: #34e6c5; /*bright green*/
+  color: black; /*button text color*/
+  opacity: 0.8; /* opacity of the button to 90% */
+  text-decoration: none;
+}
+.button.contact:active { /* selected link */
+  color: #34e6c5;
+  box-shadow: 0 3px;
+  transform: translate(2px);
+}
