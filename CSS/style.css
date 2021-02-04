@@ -85,3 +85,7 @@ img {
 .profile {
   max-width: 300px;
 }
+nav ul a {
+  text-decoration: underline;
+  line-height: 2;
+}
