@@ -82,3 +82,6 @@ img {
   box-shadow: 0 3px;
   transform: translate(2px);
 }
+.profile {
+  max-width: 300px;
+}
