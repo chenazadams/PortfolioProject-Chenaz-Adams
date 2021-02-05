@@ -12,7 +12,6 @@ Button and Hover Color(green):#34e6c5
 .container {
   padding: 0 15px;
   max-width: 1200px
-
 }
 #hero h1{
   text-align: center;
@@ -222,3 +221,38 @@ selector {
 }
 #experti, #flashtalk. row { padding-bottom: 25px; border-bottom: 1px solid #4a4a4a
 }
+
+/*MEDIUM DEVICES (640px and larger)*/
+@media only screen and (min-width: 640px) {
+  header {
+    text-align: unset;
+    padding: 20px 0 13px;
+  }
+nav {
+    width: auto;
+    float: right;
+    margin-top: 4px;
+  }
+  body {
+    font-size: 18px;
+  }
+  #hero{
+    text-align: center;
+  }
+  #hero span {
+display: block;
+}
+  .col-md-6 {
+  width: 50%;
+}
+[class*="col-"]{
+  float: left;
+}
+}
+
+/*LARGE DEVICES (1024px and larger)*/
+@madia only screen and (min-width: 1024px){
+  }
+  /*X-LARGE DEVICES (1920px and larger)*/
+  @madia only screen and (min-width: 1440px){
+    }
