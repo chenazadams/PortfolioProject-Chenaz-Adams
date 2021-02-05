@@ -93,11 +93,11 @@ a:focus {
   font-variant: small-caps;
   padding: 10px;
   border-radius: 16px;
-  border-bottom: 1px solid #34e6c5;
+  border-bottom: 1px solid #black;
   /* border width, type, color */
-  border-top: 1px solid #34e6c5;
-  border-right: 1px solid #34e6c5;
-  border-left: 1px solid #34e6c5;
+  border-top: 1px solid #black;
+  border-right: 1px solid #black;
+  border-left: 1px solid #black;
   transition: 0.4s opacity;
 }
 
@@ -150,6 +150,7 @@ a:focus {
   transform: translate(2px);
 }
 .picture {
+.profile {
   max-width: 300px;
 }
 nav ul a {
