@@ -5,7 +5,7 @@ Secondary Color (red):#ef233c;
 Button and Hover Color(green):#34e6c5
 
 */
-* {
+*{
   box-sizing: border-box;
 }
 /*Layout Styling*/
@@ -48,15 +48,15 @@ nav > ul > li > a {
   font-weight: 700;
   color: #4a4a4a;
 }
-nav > ul > li > a: hover {
+nav > ul > li > a:hover {
     color: grey;
     text-decoration: underline;
 }
 
-nav > ul > li > a: visited {
+nav > ul > li > a:visited {
     color: lightgrey;
 }
-nav > ul > li > a: active {
+nav > ul > li > a:active {
     color: grey;
 }
 
