@@ -246,10 +246,10 @@ selector {
     padding: 20px 0 13px;
   }
 
-  nav {
+  #nav  {
+    display: inline;
     width: auto;
     float: right;
-    margin-top: 4px;
   }
 
   body {
@@ -268,6 +268,22 @@ selector {
     display: block;
   }
 
+  h1 {
+    text-align: center;
+  }
+
+  p {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  .profile {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 40%;
+  }
+
   .col-md-6 {
     width: 50%;
   }
@@ -283,6 +299,21 @@ selector {
     clear: both;
     display: table;
   }
+  div#relevantskills {
+    width: 50%;
+    float: left;
+}
+
+  div#toolsiuse {
+    width: 50%;
+    float: right;
+  }
+  #letsworktogether {
+    font-size: 22px;
+    color: grey;
+
+  }
+
 }
 
 /*LARGE DEVICES (1024px and larger)*/
