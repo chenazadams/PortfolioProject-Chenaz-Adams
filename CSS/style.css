@@ -317,7 +317,134 @@ selector {
 }
 
 /*LARGE DEVICES (1024px and larger)*/
-@madia only screen and (min-width: 1024px) {}
+@madia only screen and (min-width: 1024px) {
 
-/*X-LARGE DEVICES (1920px and larger)*/
-@madia only screen and (min-width: 1440px) {}
+    header {
+      text-align: unset;
+      padding: 20px 0 13px;
+    }
+
+    #nav  {
+      display: inline;
+      width: auto;
+      float: right;
+    }
+
+    body {
+      font-size: 18px;
+    }
+
+    #hero {
+      text-align: center;
+    }
+
+    #subheading {
+      display: block;
+    }
+
+    #slogan {
+      display: block;
+    }
+
+    h1 {
+      text-align: center;
+    }
+
+    p {
+      padding-left: 20px;
+      padding-right: 20px;
+    }
+
+
+  .picture {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 60%;
+  }
+
+  .col-lg-7 {
+    width: 40%;
+  }
+
+    [class*="col-md-6"] {
+      float: left;
+      padding-left: 10px;
+      padding-right: 10px;
+    }
+
+    .row::after {
+      content: "";
+      clear: both;
+      display: table;
+}
+.container {
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+}
+}
+
+/*X-LARGE DEVICES (1440px and larger)*/
+@madia only screen and (min-width: 1440px) {
+
+    header {
+      text-align: unset;
+      padding: 20px 0 13px;
+    }
+
+    #nav  {
+      display: inline;
+      width: auto;
+      float: right;
+    }
+
+    body {
+      font-size: 20px;
+    }
+
+    #hero {
+      text-align: center;
+    }
+
+    #subheading {
+      display: block;
+    }
+
+    #slogan {
+      display: block;
+    }
+
+    h1 {
+      text-align: center;
+    }
+
+    p {
+      padding-left: 20px;
+      padding-right: 20px;
+    }
+
+
+  .picture {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 60%;
+  }
+
+  .col-lg-7 {
+    width: 40%;
+  }
+
+    [class*="col-md-6"] {
+      float: left;
+      padding-left: 10px;
+      padding-right: 10px;
+    }
+
+    .row::after {
+      content: "";
+      clear: both;
+      display: table;
+}
+}
