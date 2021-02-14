@@ -42,6 +42,8 @@ body {
 nav>ul {
   list-style-type: none;
   padding: 0;
+  margin: auto;
+  display: flex;
 }
 
 nav>ul>li> {
@@ -75,12 +77,15 @@ h1, h2, h3, h4 {
 }
 
 h1 {
-  font-size: 2.75em font-weight: 700;
+  font-size: 2.75em;
+  font-weight: 700;
+  padding-left: 10px;
 }
 
 h2 {
   font-size: 2.25em;
   font-weight: 700;
+
 }
 
 h3 {
@@ -107,19 +112,19 @@ a {
   text-decoration: none;
 }
 
+/* Underlining when hovering over a link */
 a:hover {
   color: #34e6c5;
   text-decoration: underline;
-  /* Underlining when hovering over a link */
 }
 
+/* visited link */
 a:visited {
-  /* visited link */
   color: #33DEBF;
 }
 
+/* selected link */
 a:active {
-  /* selected link */
   color: #34e6c5;
 }
 
@@ -136,14 +141,10 @@ a:focus {
   /* overrides the default link color */
   font-weight: 400;
   font-variant: small-caps;
-  padding: 10px;
+
   border-radius: 16px;
-  border-bottom: 1px solid #black;
-  /* border width, type, color */
-  border-top: 1px solid #black;
-  border-right: 1px solid #black;
-  border-left: 1px solid #black;
-  transition 0.2s; opacity;
+  transition: 0.2s;
+  opacity: 0.8;
 }
 
 .button:hover {
@@ -165,17 +166,13 @@ a:focus {
 .button.contact {
   background-color: #34e6c5;
   color: black;
+  padding: 10px;
   font-variant: small-caps;
-  font-weight: regular;
-  text-align: centre;
-  padding-top: 10px;
-  padding-bottom: 10px;
-  padding-left: 10px;
-  padding-right: 10px;
   border: 1px solid transparent;
   box-shadow: 0 2px;
   opacity: 0.8;
   text-decoration: none;
+
 }
 
 .button.contact:hover {
@@ -199,12 +196,6 @@ a:focus {
   max-width: 300px;
 }
 
-/*
-nav ul a {
-  text-decoration: none;
-  line-height: 2;
-
-}*/
 .subheading {
   background-color: white color: grey;
 }
@@ -213,14 +204,17 @@ nav ul a {
   background-color: white color: grey;
 }
 
+footer {
+
+}
+
 /*--HEADER*/
 header {
   background-color: white;
   text-align: center;
-  padding: 10px 0;
-  margin: 10px;
-  border-bottom: 3px solid #4a4a4a;
-  box-shadow: 2px 2px 1px 0px rgba(50, 50, 50, 0.75);
+  padding: 30px 0;
+  border-bottom: 0.5px solid lightgrey;
+  box-shadow: 1px 1px 1px 0px rgba(50, 50, 50, 0.75);
   position: relative;
 }
 
@@ -231,7 +225,7 @@ selector {
 }
 
 .row {
-  margin: 25px 0;
+  margin: 35px 0;
 }
 
 #experti, #flashtalk. row {
@@ -243,10 +237,9 @@ selector {
 @media only screen and (min-width: 640px) {
   header {
     text-align: unset;
-    padding: 20px 0 13px;
   }
 
-  #nav  {
+  #nav {
     display: inline;
     width: auto;
     float: right;
@@ -272,10 +265,6 @@ selector {
     text-align: center;
   }
 
-  p {
-    padding-left: 20px;
-    padding-right: 20px;
-  }
 
   .profile {
     display: block;
@@ -290,6 +279,64 @@ selector {
 
   [class*="col-md-6"] {
     float: left;
+    padding-left: 30px;
+    padding-right: 20px;
+  }
+
+  .row::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+
+}
+
+/*LARGE DEVICES (1024px and larger)*/
+@madia only screen and (min-width: 1024px) {
+  header {
+    text-align: unset;
+    padding: 20px 0 13px;
+  }
+
+  #nav {
+    display: inline;
+    width: auto;
+
+  }
+
+  body {
+    font-size: 18px;
+  }
+
+  #hero {
+    text-align: center;
+  }
+
+  #subheading {
+    display: block;
+  }
+
+  #slogan {
+    display: block;
+  }
+
+  h1 {
+    text-align: center;
+  }
+
+  .picture {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 60%;
+  }
+
+  .col-lg-7 {
+    width: 40%;
+  }
+
+  [class*="col-md-6"] {
+    float: left;
     padding-left: 10px;
     padding-right: 10px;
   }
@@ -299,131 +346,51 @@ selector {
     clear: both;
     display: table;
   }
-  div#relevantskills {
-    width: 50%;
-    float: left;
-}
 
-  div#toolsiuse {
-    width: 50%;
-    float: right;
-  }
-  #letsworktogether {
-    font-size: 22px;
-    color: grey;
-
-  }
-
-}
-
-/*LARGE DEVICES (1024px and larger)*/
-@madia only screen and (min-width: 1024px) {
-
-    header {
-      text-align: unset;
-      padding: 20px 0 13px;
-    }
-
-    #nav  {
-      display: inline;
-      width: auto;
-      float: right;
-    }
-
-    body {
-      font-size: 18px;
-    }
-
-    #hero {
-      text-align: center;
-    }
-
-    #subheading {
-      display: block;
-    }
-
-    #slogan {
-      display: block;
-    }
-
-    h1 {
-      text-align: center;
-    }
-
-    p {
-      padding-left: 20px;
-      padding-right: 20px;
-    }
-
-
-  .picture {
-    display: block;
+  .container {
+    max-width: 1200px;
     margin-left: auto;
     margin-right: auto;
-    width: 60%;
   }
-
-  .col-lg-7 {
-    width: 40%;
-  }
-
-    [class*="col-md-6"] {
-      float: left;
-      padding-left: 10px;
-      padding-right: 10px;
-    }
-
-    .row::after {
-      content: "";
-      clear: both;
-      display: table;
-}
-.container {
-  max-width: 1200px;
-  margin-left: auto;
-  margin-right: auto;
-}
 }
 
 /*X-LARGE DEVICES (1440px and larger)*/
 @madia only screen and (min-width: 1440px) {
+  header {
+    text-align: unset;
+    padding: 20px 0 13px;
+  }
 
-    header {
-      text-align: unset;
-      padding: 20px 0 13px;
-    }
+  #nav {
+    display: inline;
+    width: auto;
+    float: right;
+  }
 
-    #nav  {
-      display: inline;
-      width: auto;
-      float: right;
-    }
+  body {
+    font-size: 20px;
+  }
 
-    body {
-      font-size: 20px;
-    }
+  #hero {
+    text-align: center;
+  }
 
-    #hero {
-      text-align: center;
-    }
+  #subheading {
+    display: block;
+  }
 
-    #subheading {
-      display: block;
-    }
+  #slogan {
+    display: block;
+  }
 
-    #slogan {
-      display: block;
-    }
+  h1 {
+    text-align: center;
+  }
 
-    h1 {
-      text-align: center;
-    }
-
-    p {
-      padding-left: 20px;
-      padding-right: 20px;
-    }
-
+  p {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
 
   .picture {
     display: block;
@@ -436,24 +403,34 @@ selector {
     width: 40%;
   }
 
-    [class*="col-md-6"] {
-      float: left;
-      padding-left: 10px;
-      padding-right: 10px;
-    }
+  [class*="col-md-6"] {
+    float: left;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
 
-    .row::after {
-      content: "";
-      clear: both;
-      display: table;
+  .row::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
 }
-}
+
 @keyframe color-change {
-0% {fill: #edc655;}
-50% {fill; #fcffad;}
-100% {fill: #f76414;}
+  0% {
+    fill: #edc655;
+  }
 
+  50% {
+    fill;
+    #fcffad;
+  }
+
+  100% {
+    fill: #f76414;
+  }
 }
+
 .sun {
   animation-duration: 4s;
   animation-name: color-change;
@@ -461,10 +438,17 @@ selector {
   animation-direction: alternate;
   animation-timing-function: linear;
 }
+
 @keyframes cloud-move {
-  from {transform: translate(0,50px);}
-  to {transform: translate(200px,50px);}
+  from {
+    transform: translate(0, 50px);
+  }
+
+  to {
+    transform: translate(200px, 50px);
+  }
 }
+
 .cloud-front {
   animation-duration: 30s;
   animation-name: cloud-move;
@@ -472,10 +456,17 @@ selector {
   animation-direction: alternate;
   animation-timing-function: linear;
 }
+
 @keyframes cloud-move-reverse {
-  from {transform: translate(446px,48px);}
-  to {transform: translate(100px, 48px);}
+  from {
+    transform: translate(446px, 48px);
+  }
+
+  to {
+    transform: translate(100px, 48px);
+  }
 }
+
 .cloud-back {
   animation: 34s cloud-move-reverse infinite alternate linear;
 }
