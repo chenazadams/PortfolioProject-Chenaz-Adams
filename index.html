@@ -19,20 +19,21 @@
 <body>
   <!--HEADER-->
   <header>
-  <div class="container">
+    <div class="container">
       <div class="navtoggle" id="myNavtoggle">
-    </div>
+      </div>
       <!--<img class="logo" src="text=Chenaz Adams" alt="Chenaz Adams">-->
       <a href="index.html">Chenaz Adams</a>
 
       <!--Navigation-->
       <div id="nav">
         <nav>
-          <ul>
+          <ul class="navtoggle" id="myNavtoggle">
             <li><a href="#LetsWorkTogether">Contact</a></li>
             <li><a href="about.html">About</a></li>
             <li><a href="index.html">Work</a></li>
-            <li><a href="javascript:void(0);" class="icon" onclick="myFunction()"><i class="fas fa-bars"></i></a></li>
+            <li class="menu-bar"><a href="javascript:void(0);" class="icon" onclick="menuToggle()">
+                <i class="fas fa-bars"></i></a></li>
           </ul>
         </nav>
       </div>
@@ -1047,7 +1048,7 @@
       </a>
 
       <a style="float: right; padding-right: 20px;" href="TWITTER-URL" target="_blank">
-      <i class="fab fa-twitter"></i>
+        <i class="fab fa-twitter"></i>
       </a>
 
       <a style="float: right; padding-right: 20px;" href="Behance" target="_blank">

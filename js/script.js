@@ -8,7 +8,6 @@ var text2 = "UX/UI";
 var escapedText1 = "They say\"absolutely!\"why not?";
 var escapedText2 = "He said: that\'s great!";
 
-console.log(numberInteger);
 
 function menuToggle() {
   var x = document.getElementById('myNavtoggle');
