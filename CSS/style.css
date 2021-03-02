@@ -82,8 +82,18 @@ nav>ul>li>a:active {
   padding-right: 0;
 }
 
+.navtoggle.responsive nav {
+  padding: 24px 0 0;
+}
+
 .navtoggle.responsive li {
   display: block;
+  padding: 10px 0;
+  border-top: 1px solid rgba(255, 127, 80, 0.5);
+}
+
+.navtoggle.responsive li:last-child {
+  padding: 0 0 10px;
 }
 
 /*headings*/
@@ -243,9 +253,18 @@ selector {
 }
 
 /*MEDIUM DEVICES (640px and larger)*/
+
 @media only screen and (min-width: 640px) {
   .logo {
     max-width: 250px;
+  }
+
+  nav>ul>li> {
+    display: inline-block;
+  }
+
+  nav>ul {
+    margin: 1em 0;
   }
 
   .navtoggle li:not(:last-child) {
@@ -258,14 +277,6 @@ selector {
 
   .navtoggle, .navtoggle.responsive {
     position: relative;
-  }
-
-  nav>ul>li> {
-    display: inline-block;
-  }
-
-  nav>ul {
-    margin: 1em 0;
   }
 
   header {
