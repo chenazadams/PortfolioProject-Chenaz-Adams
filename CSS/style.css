@@ -27,7 +27,11 @@ Button and Hover Color(green):#34e6c5
 }
 
 .logo {
-  max-width: 250px;
+  max-width: 150px;
+}
+
+main {
+  padding-top: 307px;
 }
 
 body {
@@ -42,13 +46,8 @@ body {
 nav>ul {
   list-style-type: none;
   padding: 0;
-  margin: auto;
+  margin: 0;
   display: flex;
-}
-
-nav>ul>li> {
-  display: inline-block;
-  width: 100%
 }
 
 nav>ul>li>a {
@@ -71,6 +70,22 @@ nav>ul>li>a:active {
   color: grey;
 }
 
+.navtoggle li:not(:last-child) {
+  display: none;
+}
+
+.navtoggle li .icon {
+  position: absolute;
+  right: 0;
+  top: 2px;
+  font-size: 20px;
+  padding-right: 0;
+}
+
+.navtoggle.responsive li {
+  display: block;
+}
+
 /*headings*/
 h1, h2, h3, h4 {
   line-height: 1.4
@@ -85,7 +100,6 @@ h1 {
 h2 {
   font-size: 2.25em;
   font-weight: 700;
-
 }
 
 h3 {
@@ -141,7 +155,6 @@ a:focus {
   /* overrides the default link color */
   font-weight: 400;
   font-variant: small-caps;
-
   border-radius: 16px;
   transition: 0.2s;
   opacity: 0.8;
@@ -172,7 +185,6 @@ a:focus {
   box-shadow: 0 2px;
   opacity: 0.8;
   text-decoration: none;
-
 }
 
 .button.contact:hover {
@@ -204,15 +216,12 @@ a:focus {
   background-color: white color: grey;
 }
 
-footer {
-
-}
+footer {}
 
 /*--HEADER*/
 header {
   background-color: white;
-  text-align: center;
-  padding: 30px 0;
+  padding: 10px 0 4px;
   border-bottom: 0.5px solid lightgrey;
   box-shadow: 1px 1px 1px 0px rgba(50, 50, 50, 0.75);
   position: relative;
@@ -235,6 +244,30 @@ selector {
 
 /*MEDIUM DEVICES (640px and larger)*/
 @media only screen and (min-width: 640px) {
+  .logo {
+    max-width: 250px;
+  }
+
+  .navtoggle li:not(:last-child) {
+    display: inline-block;
+  }
+
+  .navtoggle li:last-child {
+    display: none;
+  }
+
+  .navtoggle, .navtoggle.responsive {
+    position: relative;
+  }
+
+  nav>ul>li> {
+    display: inline-block;
+  }
+
+  nav>ul {
+    margin: 1em 0;
+  }
+
   header {
     text-align: unset;
   }
@@ -265,7 +298,6 @@ selector {
     text-align: center;
   }
 
-
   .profile {
     display: block;
     margin-left: auto;
@@ -288,7 +320,6 @@ selector {
     clear: both;
     display: table;
   }
-
 }
 
 /*LARGE DEVICES (1024px and larger)*/
@@ -301,7 +332,6 @@ selector {
   #nav {
     display: inline;
     width: auto;
-
   }
 
   body {
