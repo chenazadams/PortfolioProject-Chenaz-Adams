@@ -28,6 +28,8 @@ Button and Hover Color(green):#34e6c5
 
 .logo {
   max-width: 150px;
+  padding-top: 20px;
+  display: inline-block;
 }
 
 main {
@@ -243,6 +245,7 @@ header {
   border-bottom: 0.5px solid lightgrey;
   box-shadow: 1px 1px 1px 0px rgba(50, 50, 50, 0.75);
   position: relative;
+  min-height: 70px;
 }
 
 selector {
@@ -253,6 +256,7 @@ selector {
 
 .row {
   margin: 35px 0;
+  padding: 20px;
 }
 
 #experti, #flashtalk. row {
@@ -263,9 +267,10 @@ selector {
 /*MEDIUM DEVICES (640px and larger)*/
 
 @media only screen and (min-width: 640px) {
-  .logo {
-    max-width: 250px;
-  }
+  header {
+   box-shadow: 1px 1px 1px 0px rgba(50, 50, 50, 0.75);
+ }
+
 
   nav>ul>li> {
     display: inline-block;
