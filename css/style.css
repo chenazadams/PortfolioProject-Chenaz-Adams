@@ -14,13 +14,23 @@ Button and Hover Color(green):#34e6c5
   padding: 0 15px;
 }
 
+#slogan {
+  display: block;
+  text-align: center;
+}
+
+#subheading {
+  text-align: center;
+  display: block;
+}
+
 #hero h1 {
   text-align: center;
 }
 
 #hero {
   background-color: white;
-  padding: 20px 0;
+  padding: 20px 20px;
   display: inline-block;
   width: 100%;
 }
@@ -29,10 +39,6 @@ Button and Hover Color(green):#34e6c5
   max-width: 150px;
   padding-top: 20px;
   display: inline-block;
-}
-
-main {
-  padding-top: 307px;
 }
 
 body {
@@ -120,7 +126,6 @@ h4 {
 h1 {
   font-size: 2.75em;
   font-weight: 700;
-  padding-left: 10px;
 }
 
 h2 {
@@ -247,11 +252,13 @@ a:focus {
 .subheading {
   background-color: white;
   color: grey;
+  text-align: center;
 }
 
 .slogan {
   background-color: white;
   color: grey;
+  text-align: center;
 }
 
 footer {}
@@ -261,7 +268,6 @@ header {
   background-color: white;
   padding: 10px 0 4px;
   border-bottom: 0.5px solid lightgrey;
-  box-shadow: 1px 1px 1px 0 rgba(50, 50, 50, 0.75);
   position: relative;
   min-height: 70px;
 }
@@ -270,7 +276,6 @@ selector {
   margin: 0 auto;
 
   /* No spacing to top and bottom and auto spacing to left and right */
-  width: 1200px;
 }
 
 .row {
@@ -450,10 +455,12 @@ selector {
 
   #subheading {
     display: block;
+    text-align: center;
   }
 
   #slogan {
     display: block;
+    text-align: center;
   }
 
   h1 {
