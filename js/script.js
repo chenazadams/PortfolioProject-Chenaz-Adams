@@ -8,7 +8,6 @@ var text2 = "UX/UI";
 var escapedText1 = "They say\"absolutely!\"why not?";
 var escapedText2 = "He said: that\'s great!";
 
-
 function menuToggle() {
   var x = document.getElementById('myNavtoggle');
   if (x.className === 'navtoggle') {
@@ -16,4 +15,3 @@ function menuToggle() {
   } else {
     x.className = 'navtoggle';
   }
-}

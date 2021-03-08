@@ -51,15 +51,19 @@ nav>ul {
   margin: 0;
   display: flex;
 }
+
 nav>ul li:not(.menu-bar) {
   display: none;
 }
+
 .responsive {
   flex-direction: column;
 }
+
 .responsive li {
   display: block;
 }
+
 nav>ul>li>a {
   padding: 0 15px;
   text-transform: uppercase;
@@ -229,11 +233,13 @@ a:focus {
 }
 
 .subheading {
-  background-color: white color: grey;
+  background-color: white;
+  color: grey;
 }
 
 .slogan {
-  background-color: white color: grey;
+  background-color: white;
+  color: grey;
 }
 
 footer {}
@@ -259,18 +265,16 @@ selector {
   padding: 20px;
 }
 
-#experti, #flashtalk. row {
+#experti, #flashtalk.row {
   padding-bottom: 25px;
-  border-bottom: 1px solid #4a4a4a
+  border-bottom: 1px solid #4a4a4a;
 }
 
 /*MEDIUM DEVICES (640px and larger)*/
-
 @media only screen and (min-width: 640px) {
   header {
-   box-shadow: 1px 1px 1px 0px rgba(50, 50, 50, 0.75);
- }
-
+    box-shadow: 1px 1px 1px 0px rgba(50, 50, 50, 0.75);
+  }
 
   nav>ul>li> {
     display: inline-block;
