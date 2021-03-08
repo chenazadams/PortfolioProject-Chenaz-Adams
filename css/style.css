@@ -9,10 +9,9 @@ Button and Hover Color(green):#34e6c5
   box-sizing: border-box;
 }
 
-/*Layout Styling*/
+/* Layout Styling */
 .container {
   padding: 0 15px;
-  max-width: 1200px
 }
 
 #hero h1 {
@@ -37,22 +36,22 @@ main {
 }
 
 body {
-  background-color: #ffffff;
+  background-color: #fff;
   font-family: 'Nunito Sans', sans-serif;
   font-size: 16px;
   font-weight: 300;
   line-height: 1.6;
-  color: #4a4a4a
+  color: #4a4a4a;
 }
 
-nav>ul {
+nav > ul {
   list-style-type: none;
   padding: 0;
   margin: 0;
   display: flex;
 }
 
-nav>ul li:not(.menu-bar) {
+nav > ul li:not(.menu-bar) {
   display: none;
 }
 
@@ -64,23 +63,23 @@ nav>ul li:not(.menu-bar) {
   display: block;
 }
 
-nav>ul>li>a {
+nav > ul > li > a {
   padding: 0 15px;
   text-transform: uppercase;
   font-weight: 700;
   color: #4a4a4a;
 }
 
-nav>ul>li>a:hover {
+nav > ul > li > a:hover {
   color: grey;
   text-decoration: underline;
 }
 
-nav>ul>li>a:visited {
+nav > ul > li > a:visited {
   color: lightgrey;
 }
 
-nav>ul>li>a:active {
+nav > ul > li > a:active {
   color: grey;
 }
 
@@ -110,9 +109,12 @@ nav>ul>li>a:active {
   padding: 0 0 10px;
 }
 
-/*headings*/
-h1, h2, h3, h4 {
-  line-height: 1.4
+/* headings */
+h1,
+h2,
+h3,
+h4 {
+  line-height: 1.4;
 }
 
 h1 {
@@ -136,7 +138,10 @@ h4 {
   font-weight: 400;
 }
 
-h1, h2, h3, h4 {
+h1,
+h2,
+h3,
+h4 {
   width: 100%;
 }
 
@@ -144,7 +149,7 @@ img {
   width: 100%;
 }
 
-/*phone number*/
+/* phone number */
 a {
   color: grey;
   text-decoration: none;
@@ -158,7 +163,7 @@ a:hover {
 
 /* visited link */
 a:visited {
-  color: #33DEBF;
+  color: #33debf;
 }
 
 /* selected link */
@@ -174,8 +179,9 @@ a:focus {
 
 .button {
   display: inline-block;
-  background-color: #ffffff;
+  background-color: #fff;
   color: black;
+
   /* overrides the default link color */
   font-weight: 400;
   font-variant: small-caps;
@@ -186,10 +192,13 @@ a:focus {
 
 .button:hover {
   background-color: #34e6c5;
-  /*bright green*/
+
+  /* bright green */
   color: black;
-  /*button text color*/
+
+  /* button text color */
   opacity: 0.8;
+
   /* opacity of the button to 90% */
   text-decoration: none;
 }
@@ -199,7 +208,7 @@ a:focus {
   color: #34e6c5;
 }
 
-/*send me an email button styling*/
+/* send me an email button styling */
 .button.contact {
   background-color: #34e6c5;
   color: black;
@@ -213,10 +222,13 @@ a:focus {
 
 .button.contact:hover {
   background-color: #34e6c5;
-  /*bright green*/
+
+  /* bright green */
   color: black;
-  /*button text color*/
+
+  /* button text color */
   opacity: 0.8;
+
   /* opacity of the button to 90% */
   text-decoration: none;
 }
@@ -244,20 +256,21 @@ a:focus {
 
 footer {}
 
-/*--HEADER*/
+/* --HEADER */
 header {
   background-color: white;
   padding: 10px 0 4px;
   border-bottom: 0.5px solid lightgrey;
-  box-shadow: 1px 1px 1px 0px rgba(50, 50, 50, 0.75);
+  box-shadow: 1px 1px 1px 0 rgba(50, 50, 50, 0.75);
   position: relative;
   min-height: 70px;
 }
 
 selector {
   margin: 0 auto;
+
   /* No spacing to top and bottom and auto spacing to left and right */
-  width: 1200px
+  width: 1200px;
 }
 
 .row {
@@ -265,22 +278,23 @@ selector {
   padding: 20px;
 }
 
-#experti, #flashtalk.row {
+#experti,
+#flashtalk.row {
   padding-bottom: 25px;
   border-bottom: 1px solid #4a4a4a;
 }
 
-/*MEDIUM DEVICES (640px and larger)*/
+/* MEDIUM DEVICES (640px and larger) */
 @media only screen and (min-width: 640px) {
   header {
-    box-shadow: 1px 1px 1px 0px rgba(50, 50, 50, 0.75);
+    box-shadow: 1px 1px 1px 0 rgba(50, 50, 50, 0.75);
   }
 
-  nav>ul>li> {
+  nav > ul > li > {
     display: inline-block;
   }
 
-  nav>ul {
+  nav > ul {
     margin: 1em 0;
   }
 
@@ -292,7 +306,8 @@ selector {
     display: none;
   }
 
-  .navtoggle, .navtoggle.responsive {
+  .navtoggle,
+  .navtoggle.responsive {
     position: relative;
   }
 
@@ -350,7 +365,7 @@ selector {
   }
 }
 
-/*LARGE DEVICES (1024px and larger)*/
+/* LARGE DEVICES (1024px and larger) */
 @madia only screen and (min-width: 1024px) {
   header {
     text-align: unset;
@@ -412,7 +427,7 @@ selector {
   }
 }
 
-/*X-LARGE DEVICES (1440px and larger)*/
+/* X-LARGE DEVICES (1440px and larger) */
 @madia only screen and (min-width: 1440px) {
   header {
     text-align: unset;
@@ -480,8 +495,7 @@ selector {
   }
 
   50% {
-    fill;
-    #fcffad;
+    fill #fcffad
   }
 
   100% {
