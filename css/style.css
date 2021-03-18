@@ -50,14 +50,14 @@ body {
   color: #4a4a4a;
 }
 
-nav > ul {
+nav>ul {
   list-style-type: none;
   padding: 0;
   margin: 0;
   display: flex;
 }
 
-nav > ul li:not(.menu-bar) {
+nav>ul li:not(.menu-bar) {
   display: none;
 }
 
@@ -69,23 +69,23 @@ nav > ul li:not(.menu-bar) {
   display: block;
 }
 
-nav > ul > li > a {
+nav>ul>li>a {
   padding: 0 15px;
   text-transform: uppercase;
   font-weight: 700;
   color: #4a4a4a;
 }
 
-nav > ul > li > a:hover {
+nav>ul>li>a:hover {
   color: grey;
   text-decoration: underline;
 }
 
-nav > ul > li > a:visited {
+nav>ul>li>a:visited {
   color: lightgrey;
 }
 
-nav > ul > li > a:active {
+nav>ul>li>a:active {
   color: grey;
 }
 
@@ -108,7 +108,7 @@ nav > ul > li > a:active {
 .navtoggle.responsive li {
   display: block;
   padding: 10px 0;
-  border-top: 1px solid rgba(255, 127, 80, 0.5);
+  border-top: 1px solid rgb(52, 230, 197);
 }
 
 .navtoggle.responsive li:last-child {
@@ -186,7 +186,6 @@ a:focus {
   display: inline-block;
   background-color: #fff;
   color: black;
-
   /* overrides the default link color */
   font-weight: 400;
   font-variant: small-caps;
@@ -197,13 +196,10 @@ a:focus {
 
 .button:hover {
   background-color: #34e6c5;
-
   /* bright green */
   color: black;
-
   /* button text color */
   opacity: 0.8;
-
   /* opacity of the button to 90% */
   text-decoration: none;
 }
@@ -227,13 +223,10 @@ a:focus {
 
 .button.contact:hover {
   background-color: #34e6c5;
-
   /* bright green */
   color: black;
-
   /* button text color */
   opacity: 0.8;
-
   /* opacity of the button to 90% */
   text-decoration: none;
 }
@@ -274,7 +267,6 @@ header {
 
 selector {
   margin: 0 auto;
-
   /* No spacing to top and bottom and auto spacing to left and right */
 }
 
@@ -295,11 +287,11 @@ selector {
     box-shadow: 1px 1px 1px 0 rgba(50, 50, 50, 0.75);
   }
 
-  nav > ul > li > {
+  nav>ul>li> {
     display: inline-block;
   }
 
-  nav > ul {
+  nav>ul {
     margin: 1em 0;
   }
 
@@ -326,8 +318,14 @@ selector {
     float: right;
   }
 
+  .picture {
+    display: inline;
+  }
+
   body {
     font-size: 18px;
+    padding-left: 10px;
+    padding-right: 10px;
   }
 
   #hero {
@@ -380,6 +378,7 @@ selector {
   #nav {
     display: inline;
     width: auto;
+    float: right;
   }
 
   body {
